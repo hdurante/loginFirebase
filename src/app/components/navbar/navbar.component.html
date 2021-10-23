@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png?hl=es" width="30" height="30" class="d-inline-block align-top" alt="">
+      Bootstrap
+    </a>
+    <a class="navbar-brand" href="#" *ngIf="userLogged|async as user">
+        <img *nfIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30" class="d-inline-block align-top" alt="">
+        {{user.email}}
+      </a>
+  </nav>
